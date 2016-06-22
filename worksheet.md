@@ -495,10 +495,10 @@ This would get the three orientation values (measured in degrees) and store them
     sense = SenseHat()
 
     while True:
-	    orientation = sense.get_orientation()
-		pitch = orientation['pitch']
-		roll = orientation['roll']
-		yaw = orientation['yaw']
+        orientation = sense.get_orientation()
+        pitch = orientation['pitch']
+        roll = orientation['roll']
+        yaw = orientation['yaw']
         print("pitch=%s, roll=%s, yaw=%s" % (pitch,yaw,roll))
     ```
 
@@ -516,10 +516,10 @@ This would get the three orientation values (measured in degrees) and store them
     sense = SenseHat()
 
     while True:
-	    acceleration = sense.get_accelerometer_raw()
+        acceleration = sense.get_accelerometer_raw()
         x = acceleration['x']
-		y = acceleration['y']
-		z = acceleration['z']
+        y = acceleration['y']
+        z = acceleration['z']
 
         x=round(x, 0)
         y=round(y, 0)
@@ -543,8 +543,7 @@ This would get the three orientation values (measured in degrees) and store them
 
     while True:
         x = sense.get_accelerometer_raw().['x']
-		y = sense.get_accelerometer_raw().['y']
-		z = sense.get_accelerometer_raw().['z']
+        y = sense.get_accelerometer_raw().['y']
 
         x = round(x, 0)
         y = round(y, 0)
@@ -571,10 +570,10 @@ This would get the three orientation values (measured in degrees) and store them
     sense = SenseHat()
 
     while True:
-	    acceleration = sense.get_accelerometer_raw()
+        acceleration = sense.get_accelerometer_raw()
         x = acceleration['x']
-		y = acceleration['y']
-		z = acceleration['z']
+        y = acceleration['y']
+        z = acceleration['z']
         
         x = abs(x)
         y = abs(y)
@@ -695,11 +694,10 @@ while play:
     sense.set_rotation(angle)
     sense.set_pixels(arrow)
     time.sleep(pause)
-	acceleration = sense.get_accelerometer_raw()
+    acceleration = sense.get_accelerometer_raw()
     x = acceleration['x']
-	y = acceleration['y']
-	z = acceleration['z']
-        
+    y = acceleration['y']
+
     x = round(x, 0)
     y = round(y, 0)
 
